@@ -188,12 +188,12 @@ footer div ul li a:hover {
 
 /* Home */
 .main-home {
-  background-image: url(../img/img3.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  margin-top: 0px;
-  height: 60vh;
+  width: 74%;
+  margin: 20px auto;
+  background: #9999;
+  padding: 20px;
+  height: 500px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.75);
 }
 
 .main-home h1 {
@@ -204,6 +204,7 @@ footer div ul li a:hover {
                6px 6px 5px #111,
                9px 9px 5px #111;
     margin-right: 600px;
+    margin-top: 50px;
 }
 
 .login-home {
@@ -212,7 +213,7 @@ footer div ul li a:hover {
   color: #fff;
   width: 300px;
   position: absolute;
-  transform: translate(250%, -40%);
+  transform: translate(200%, -45%);
   text-align: center;
   box-sizing: border-box;
   padding: 20px;
@@ -362,4 +363,18 @@ section div p {
   footer div ul li a {
     text-align: center;
   }
+
+  .main-home {
+    text-align: center;
+  }
+
+  .main-home h1 {
+    font-size: 40px;
+  }
+
+  .login-home {
+    transform: translate(12%,5%);
+    width: 250px;
+  }
+
 }
