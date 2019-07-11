@@ -4,8 +4,8 @@
   box-sizing: border-box;
 }
 body {
-  background-image: url(../img/body.png);
-  font-family: 'Nunito Sans', sans-serif
+  font-family: 'Nunito Sans', sans-serif;
+  background-size: 1400px;
 }
 
 /*Barra de Navegacion*/
@@ -16,8 +16,6 @@ header {
 
 header nav {
   width: 100%;
-  max-width: 1000px;
-  margin: 20px auto;
   background: #024959;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.75);
 }
@@ -63,8 +61,7 @@ header nav ul li a:hover {
 
 /*Formulario de Registro*/
 main {
-  width: 80%;
-  max-width: 1000px;
+  width: 74%;
   margin: 20px auto;
   background: #9999;
   padding: 20px;
@@ -187,6 +184,126 @@ footer div ul li a:hover {
 
 .btn-footer:active {
   transform: scale(1.10);
+}
+
+/* Home */
+.main-home {
+  background-image: url(../img/img3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  margin-top: 0px;
+  height: 60vh;
+}
+
+.main-home h1 {
+    font-family: 'Permanent Marker', cursive;
+    color: #fff;
+    font-size: 70px;
+    text-shadow: 3px 3px 5px #111,
+               6px 6px 5px #111,
+               9px 9px 5px #111;
+    margin-right: 600px;
+}
+
+.login-home {
+  background-color:#024959;
+  border-radius: 20px;
+  color: #fff;
+  width: 300px;
+  position: absolute;
+  transform: translate(250%, -40%);
+  text-align: center;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.login-home h2 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.login-home label {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+}
+
+.login-home input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.login-home input[type="text"],
+.login-home input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.login-home .btn-home {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: crimson;
+  color: #fff;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.login-home .btn-home:active{
+  transform: scale(1.10);
+}
+
+.login-home a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgray;
+}
+
+.login-home a:hover {
+  color: #fff;
+}
+
+section {
+  background-image: url(../img/img4.jpg);
+  margin-top: -36px;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+section div {
+  width: 23%;
+}
+
+section div h2 {
+  color: #fff;
+  font-family:'Nunito Sans', sans-serif;
+  text-shadow: 3px 3px 5px #111,
+             6px 6px 5px #111,
+             9px 9px 5px #111;
+  margin-bottom: 20px;
+}
+
+section div p {
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 3px 3px 5px #111,
+             6px 6px 5px #111,
+             9px 9px 5px #111;
+  font-size: 19px;
 }
 
 
