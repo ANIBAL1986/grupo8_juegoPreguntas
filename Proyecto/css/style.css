@@ -1,0 +1,387 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FEFEFE;
+  font-family: 'Raleway', sans-serif;
+}
+
+/*Header*/
+
+.menu_bar {
+  display: none;
+}
+
+header {
+  width: 100%;
+}
+
+header nav {
+  background-color: #023859;
+  z-index: 1000;
+  max-width: 1000px;
+  width: 95%;
+  margin: 20px auto;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  position: relative;
+}
+
+header nav ul li:hover {
+  background-color: #E6344A;
+}
+
+header nav ul li a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  padding: 20px;
+}
+
+header nav ul li a span {
+  margin-right: 10px;
+}
+
+header nav ul li:hover .children {
+  display: block;
+}
+
+header nav ul li .children {
+  display: none;
+  background: #011826;
+  position: absolute;
+  width: 150%;
+  z-index: 1000;
+}
+
+header nav ul li .children li {
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255,255,255,.5);
+}
+
+header nav ul li .children li a {
+  display: block;
+}
+
+header nav ul li .children li a span {
+    float: right;
+    position: relative;
+    top: 3px;
+    margin-right: 0;
+    margin-left: 10px;
+}
+header nav ul li .caret {
+  position: relative;
+  top: 3px;
+  margin-left: 10px;
+  margin-right: 0px;
+}
+
+/*Formulario Registro y Contacto*/
+
+main {
+  width: 74%;
+  margin: 20px auto;
+  background: #9999;
+  font-family: 'Raleway', sans-serif;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.75);
+}
+
+h1 {
+  color: black;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.form-register {
+  width: 95%;
+  max-width: 500px;
+  margin: auto;
+  border-radius: 7px;
+}
+
+.form--titulo{
+  color: black;
+  padding: 20px;
+  text-align: center;
+  font-weight: 100;
+  font-size: 30px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border-bottom: 5px solid black;
+}
+
+.contenedor-inputs {
+  padding: 10px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+input {
+  margin-bottom: 15px;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 3px;
+  border: 1px solid darkgray;
+}
+.input-48 {
+  width: 48%;
+}
+
+.input-100 {
+  width: 100%;
+}
+
+textarea {
+  margin-bottom: 20px;
+}
+
+.btn-enviar {
+  background: crimson;
+  color: white;
+  margin: auto;
+  padding: 10px 40px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.btn-enviar:active{
+  transform: scale(1.10);
+}
+
+.form--link {
+  width: 100%;
+  margin: 7px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/*Footer*/
+
+footer {
+  width: 100%;
+}
+
+.footer-container {
+  width: 100%;
+  background-color: #023859;
+  color: #fff;
+}
+
+.footer-main {
+  width: 98%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-main .footer-columna {
+  width: calc(100% / 3);
+  text-align: justify;
+}
+
+.footer-main .footer-columna:nth-child(2) {
+  padding: 0 20px;
+}
+
+.footer-main .footer-columna h3 {
+  font-size: 32px;
+  color: #00C6EE;
+  margin-bottom: 20px;
+}
+
+.footer-main .footer-columna input[type="email"] {
+  border: none;
+  width: 100%;
+  border: 1px solid #00C6EE;
+  font-size: 14px;
+  padding: 10px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.footer-main .footer-columna input[type="submit"] {
+  border: none;
+  background: #00C6EE;
+  color: #fff;
+  padding: 10px 40px;
+  font-size: 18px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+}
+
+.footer-main .footer-columna span p {
+  display: inline-block;
+  margin-left: 5px;
+  margin-bottom: 15px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.footer-copy-redes {
+  width: 100%;
+  background-color: #000;
+  border-top: 3px solid #fff;
+}
+
+.main-copy-redes {
+  width: 98%;
+  max-width: 1000px;
+  padding: 15px 0;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-copy-redes .footer-copy {
+  width: 70%;
+  color: #fff;
+}
+
+.main-copy-redes .footer-redes {
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main-copy-redes .footer-redes a {
+  display: inline-block;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  color: #000;
+  text-align: center;
+}
+
+/*Media Query*/
+
+@media screen and (max-width:790px) {
+  body {
+    padding-top: 80px;
+  }
+/*Header*/
+
+  .menu_bar {
+    display: block;
+    width: 100%;
+    position: fixed;
+    top:0;
+    background-color: #E6344A;
+  }
+
+  .menu_bar .bt-menu {
+    display: block;
+    padding: 20px;
+    color: #fff;
+    overflow: hidden;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .menu_bar span {
+    float: right;
+    font-size: 40px;
+  }
+
+  header nav {
+    width: 80%;
+    height: calc(100% - 80px);
+    position: fixed;
+    right: 100%;
+    margin: 0;
+    overflow: scroll;
+  }
+
+  header nav ul li {
+    display: block;
+    border-bottom: 1px solid rgba(255, 255, 255,.5);
+  }
+
+  header nav ul li a {
+    display: block;
+  }
+
+  header nav ul li:hover .children {
+    display: none;
+  }
+
+  header nav ul li .children {
+    width: 100%;
+    position: relative;
+  }
+
+  header nav ul li .children li a {
+    margin-left: 20px;
+  }
+
+  header nav ul li .caret {
+    float: right;
+  }
+
+  /*Footer*/
+
+  .footer-main .footer-columna {
+    padding: 0 10px;
+  }
+
+  .footer-main .footer-columna h3 {
+    font-size: 28px;
+  }
+
+  .footer-main .footer-columna p {
+    font-size: 14px;
+  }
+
+}
+
+@media screen and (max-width:640px) {
+  .footer-main {
+    padding: 10px 0;
+  }
+
+  .footer-main .footer-columna {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .footer-main .footer-columna h3 {
+    margin-bottom: 5px;
+  }
+
+  .footer-main .footer-columna span {
+    display: block;
+  }
+
+  .main-copy-redes .footer-copy {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+   .main-copy-redes .footer-redes {
+    width: 80%;
+    margin: auto;
+  }
+}
