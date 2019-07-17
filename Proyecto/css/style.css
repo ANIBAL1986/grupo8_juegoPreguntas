@@ -21,11 +21,11 @@ header {
 }
 
 header nav {
-  background-color: #023859;
+  background-color: black;
   z-index: 1000;
-  max-width: 1000px;
-  width: 95%;
-  margin: 20px auto;
+  width: 100%;
+  margin: auto;
+  outline: none;
 }
 
 header nav ul {
@@ -38,11 +38,12 @@ header nav ul li {
 }
 
 header nav ul li:hover {
-  background-color: #E6344A;
+  background-color: gray;
 }
 
 header nav ul li a {
   color: #fff;
+  text-shadow: 2px 2px gray;
   display: block;
   text-decoration: none;
   padding: 20px;
@@ -58,7 +59,7 @@ header nav ul li:hover .children {
 
 header nav ul li .children {
   display: none;
-  background: #011826;
+  background-color: black;
   position: absolute;
   width: 150%;
   z-index: 1000;
@@ -88,12 +89,119 @@ header nav ul li .caret {
   margin-right: 0px;
 }
 
+/*Home*/
+section {
+  position: relative;
+  width: 100%;
+}
+.banner {
+  width: 100%;
+  height: 400px;
+  margin: auto;
+
+  background-size: 100% 100%;
+
+  animation: banner 10s infinite;
+  animation-direction: alternate;
+}
+
+  @keyframes banner {
+    0%, 30% {
+      background-image: url(../img/img.jpg);
+      opacity: 1;
+    }
+    31%, 34% {
+      opacity: 0.1;
+    }
+    35%, 65% {
+      background-image: url(../img/img1.jpg);
+      opacity: 1;
+    }
+    66%, 69% {
+      opacity: 0.1;
+    }
+    70%, 100% {
+      background-image: url(../img/img2.jpg);
+      opacity: 1;
+    }
+  }
+
+  .banner2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #fff;
+  }
+
+  .banner2 h1 {
+    font-size: 100px;
+    font-family:'Permanent Marker', cursive;
+    text-shadow: 2px 2px black;
+  }
+
+  .banner2 h4 {
+    text-align: center;
+    font-size: 30px;
+    margin-right: 70px;
+    text-shadow: 2px 2px black;
+  }
+
+  .banner2 a {
+    width: 100px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 10px;
+    border: 3px solid #fff;
+    text-shadow: 2px 2px black;
+    margin-left: 285px;
+  }
+
+  .banner2 a:hover {
+    background-color: gray;
+  }
+
+.home {
+  width: 100%;
+  height: 500px;
+}
+.bienvenidos {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.bienvenidos h2 {
+  font-family:'Permanent Marker', cursive;
+  font-size: 40px;
+}
+
+.blog h2, h4 {
+  text-align: center;
+}
+.blog .blog1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.blog article {
+  margin: 15px;
+}
+
+.blog img {
+  width: 300px;
+}
+
 /*Formulario Registro y Contacto*/
 
 main {
   width: 74%;
   margin: 20px auto;
-  background: #9999;
+  background-color: #999999;
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: 'Raleway', sans-serif;
   border-radius: 20px;
   padding: 20px;
@@ -101,7 +209,7 @@ main {
 }
 
 h1 {
-  color: black;
+  color: white;
   text-align: center;
   margin-top: 40px;
 }
@@ -114,7 +222,7 @@ h1 {
 }
 
 .form--titulo{
-  color: black;
+  color: white;
   padding: 20px;
   text-align: center;
   font-weight: 100;
@@ -140,23 +248,37 @@ input {
 }
 .input-48 {
   width: 48%;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  color: #fff;
 }
 
 .input-100 {
   width: 100%;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  color: #fff;
 }
 
 textarea {
   margin-bottom: 20px;
+  outline: none;
 }
 
 .btn-enviar {
-  background: crimson;
-  color: white;
-  margin: auto;
-  padding: 10px 40px;
-  cursor: pointer;
+  border: none;
+  outline: none;
+  width: 100%;
+  text-align: center;
+  height: 45px;
+  background: #b80f22;
+  color: #fff;
   font-size: 20px;
+  border-radius: 20px;
 }
 .btn-enviar:active{
   transform: scale(1.10);
@@ -167,6 +289,7 @@ textarea {
   margin: 7px;
   text-align: center;
   font-size: 14px;
+  color: #fff;
 }
 
 /*Footer*/
@@ -177,7 +300,7 @@ footer {
 
 .footer-container {
   width: 100%;
-  background-color: #023859;
+  background-color: #666666;
   color: #fff;
 }
 
