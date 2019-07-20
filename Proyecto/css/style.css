@@ -136,6 +136,7 @@ section {
 
   .banner2 h1 {
     font-size: 100px;
+    color: #fff;
     font-family:'Permanent Marker', cursive;
     text-shadow: 2px 2px black;
   }
@@ -143,7 +144,6 @@ section {
   .banner2 h4 {
     text-align: center;
     font-size: 30px;
-    margin-right: 70px;
     text-shadow: 2px 2px black;
   }
 
@@ -153,63 +153,143 @@ section {
     color: #fff;
     text-decoration: none;
     padding: 10px;
-    margin-top: 10px;
+    margin-top: 30px;
+    margin-left: 320px;
     border: 3px solid #fff;
     text-shadow: 2px 2px black;
-    margin-left: 285px;
+    font-size: 20px;
+    background-color: #b80f22;
   }
 
   .banner2 a:hover {
     background-color: gray;
   }
 
-.home {
-  width: 100%;
-  height: 500px;
-}
-.bienvenidos {
-  text-align: center;
-  margin-top: 40px;
+  .section {
+    width: 100%;
+    background-color: #fff;
+    margin-top: -40px;
+    height: 1200px;
+  }
+
+  .section h1 {
+    font-size: 40px;
+    font-family: 'Permanent Marker', cursive;
+  }
+
+  .contenedor-imagenes {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 35px;
+  }
+
+  .section-one {
+    width: 45%;
+    height: 350px;
+    margin: 10px;
+    border: 3px solid black;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .section-one img {
+    width: 100%;
+    height: 100%;
+    transition: all .3s;
+  }
+
+  .section-one:hover img {
+    filter: blur(1.5px);
+    transform: scale(1.5);
+    transition: all .3s;
+  }
+
+  .section-one:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all .3s;
+  }
+
+  .section-one:hover:before {
+    background: rgba(0,0,0,.4);
+    z-index: 2;
+    transition: all .3s;
+  }
+
+  .texto {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: white;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .texto-titulo, .texto-parrafo {
+    margin: 10px;
+    padding: 5px;
+    font-size: 30px;
+  }
+
+  .texto-titulo {
+    position: relative;
+    left: 100%;
+    transition: all .3s;
+  }
+
+.section-one:hover .texto-titulo {
+  left: 0;
+  animation-delay: .3s;
+  transition: all .3s;
 }
 
-.bienvenidos h2 {
-  font-family:'Permanent Marker', cursive;
-  font-size: 40px;
+.texto-parrafo {
+  position: relative;
+  right: 100%;
+  transition: all .3s;
 }
 
-.blog h2, h4 {
-  text-align: center;
-}
-.blog .blog1 {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+.section-one:hover .texto-parrafo {
+  right: 0;
+  animation-delay: .3s;
+  transition: all .3s;
 }
 
-.blog article {
-  margin: 15px;
-}
-
-.blog img {
-  width: 300px;
-}
 
 /*Formulario Registro y Contacto*/
 
 main {
-  width: 74%;
-  margin: 20px auto;
-  background-color: #999999;
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+main .contactos {
+  background-image: url(../img/img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: 'Raleway', sans-serif;
-  border-radius: 20px;
-  padding: 20px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.75);
+  width: 100%;
+}
+
+main .formulario {
+  width: 100%;
 }
 
 h1 {
-  color: white;
+  color: black;
   text-align: center;
   margin-top: 40px;
 }
@@ -222,7 +302,7 @@ h1 {
 }
 
 .form--titulo{
-  color: white;
+  color: black;
   padding: 20px;
   text-align: center;
   font-weight: 100;
@@ -244,24 +324,24 @@ input {
   padding: 15px;
   font-size: 16px;
   border-radius: 3px;
-  border: 1px solid darkgray;
+  border: 1px solid black;
 }
 .input-48 {
   width: 48%;
   border: none;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid black;
   background: transparent;
   outline: none;
-  color: #fff;
+  color: black;
 }
 
 .input-100 {
   width: 100%;
   border: none;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid black;
   background: transparent;
   outline: none;
-  color: #fff;
+  color: black;
 }
 
 textarea {
@@ -289,7 +369,7 @@ textarea {
   margin: 7px;
   text-align: center;
   font-size: 14px;
-  color: #fff;
+  color: blacks;
 }
 
 /*Footer*/
@@ -461,7 +541,11 @@ footer {
   header nav ul li .caret {
     float: right;
   }
+  /*Home*/
 
+  main .contactos {
+    display: none;
+  }
   /*Footer*/
 
   .footer-main .footer-columna {
