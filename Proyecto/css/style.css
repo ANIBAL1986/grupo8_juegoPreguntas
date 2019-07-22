@@ -165,24 +165,23 @@ section {
   }
   .post-banner {
     width: 100%;
-    border: 1px solid black;
     text-align: center;
     padding: 10px;
   }
 
   .post-banner h1 {
     font-size: 50px;
-    color: #fff;
+    color: black;
     font-family:'Permanent Marker', cursive;
     text-shadow: 2px 2px black;
   }
 
   .section {
     width: 100%;
-    height: 1200px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    justify-content: center;
+    flex-direction: row;
   }
 
 
@@ -190,8 +189,8 @@ section {
     width: 70%;
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid black;
     justify-content: center;
+    flex-direction: row;
   }
 
   .section-one {
@@ -276,9 +275,17 @@ section {
 }
 
 aside {
-  background: red;
   width: 30%;
-  height: 1100px;
+  height: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+aside div {
+  width: 45%;
+  background-color: gray;
 }
 
 /*Formulario Registro y Contacto*/
@@ -379,6 +386,7 @@ textarea {
   font-size: 14px;
   color: blacks;
 }
+
 
 /*Footer*/
 
