@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML</title>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="menu_bar">
+        <a href="#" class="bt-menu"><span class="icon-menu"></span> Menu</a>
+      </div>
+        <nav>
+          <ul>
+            <li><a href="index.html"><span class="icon-home3"></span> Home</a></li>
+            <li><a href="iniciar.html"><span class="icon-users"></span> Iniciar Sesion</a></li>
+            <li class="submenu">
+              <a href="jugar.html"><span class="icon-rocket"></span> Jugar <span class="caret icon-circle-down"></span></a>
+              <ul class="children">
+                <li><a href="#">HTML <span class="icon-spades"></span></a></li>
+                <li><a href="#">CSS<span class="icon-clubs"></span></a></li>
+                <li><a href="#">LARAVEL <span class="icon-embed2"></span></a></li>
+                <li><a href="#">PHP <span class="icon-spades"></span></a></li>
+                <li><a href="#">MYSQL<span class="icon-clubs"></span></a></li>
+                <li><a href="#">JAVASCRIPT <span class="icon-embed2"></span></a></li>
+              </ul>
+            </li>
+            <li><a href="registro.html"><span class="icon-folder-open"></span> Registrate</a></li>
+            <li><a href="contacto.html"><span class="icon-mail3"></span> Contactanos</a></li>
+            <li><a href="faq.html"><span class="icon-mail3"></span> Preguntas Frecuentes</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <h1>Bienvenido a HTML</h1>
+    <br>
+
+    <form action="resultado.html" method="POST">
+
+      <h5>"¿Qué significan las siglas HTML?"</h5>
+      <p>
+      <label for="¿Qué significan las siglas HTML?"></label>
+      <br>
+      <input type="checkbox" name="HTML" value="1"> Hyperlink Text Media Language
+      <br>
+      <input type="checkbox" name="HTML" value="2"> Hyper Tag Media Language
+      <br>
+      <input type="checkbox" name="HTML" value="3">  Hyper Text Markup Language
+      </p>
+      <h5>"¿Cómo se hace referencia a un documento css externo?"</h5>
+      <p>
+      <label for="¿Cómo se hace referencia a un documento css externo?"></label>
+      <br>
+      <input type="checkbox" name="HTML" value="1"> link rel="stylesheet" href="archivo.css"></link>
+      <br>
+      <input type="checkbox" name="HTML" value="2c"> link type="stylesheet" src="archivo.css" />
+      <br>
+      <input type="checkbox" name="HTML" value="3">  link rel="stylesheet" href="archivo.css" />
+      </p>
+      <h5>"La etiqueta HEAD"</h5>
+      <p>
+      <label for="La etiqueta <head>"></label>
+      <br>
+      <input type="checkbox" name="HTML" value="1"> Es un contenedor para los elementos del contenido visible de la página
+      <br>
+      <input type="checkbox" name="HTML" value="2c"> Es un contenedor para varios elementos como "title", "style", "link", etc
+      <br>
+      <input type="checkbox" name="HTML" value="3">  Representa un contenedor para un conjunto de enlaces de navegación
+      </p>
+      <h5>"Para añadir un salto de línea, la etiqueta correcta es"</h5>
+      <p>
+      <label for="Para añadir un salto de línea, la etiqueta correcta es"></label>
+      <br>
+      <input type="checkbox" name="HTML" value="1"> newline />
+      <br>
+      <input type="checkbox" name="HTML" value="2c"> br />
+      <br>
+      <input type="checkbox" name="HTML" value="3">  nl />
+      </p>
+
+      <br>
+    <input type="submit" value="Enviar">
+    </form>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-main">
+          <div class="footer-columna">
+            <h3>Suscribete</h3>
+            <input type="email" name="email" value="" placeholder="Escriba su Correo" clas="btn-enviar">
+            <input type="submit" name="submit" value="Suscribite">
+          </div>
+
+          <div class="footer-columna">
+            <h3>Direccion</h3>
+            <span class="icon-mail3"><p>programados@gmail.com.ar</p></span>
+          </div>
+          <div class="footer-columna">
+            <h3>Sobre Nosotros</h3>
+            <p>Programados es un portal de juegos temáticos relacionados a la programación. Contamos con cientos de juegos creados para poner a prueba tus conocimientos.
+
+            <br>¡Y para que te diviertas aprendiendo!
+</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copy-redes">
+        <div class="main-copy-redes">
+          <div class="footer-copy">
+            &copy; 2019, Todos los derechos reservados - | Programados |.
+          </div>
+          <div class="footer-redes">
+            <a href="https://www.facebook.com" class="icon-facebook2"></a>
+            <a href="https://www.instagram.com" class="icon-instagram"></a>
+            <a href="https://www.twitter.com" class="icon-twitter"></a>
+            <a href="https://www.spotify.com" class="icon-spotify"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
