@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import "normalize.css";
+@import "bootstrap.min.css";
+
 * {
   padding: 0;
   margin: 0;
@@ -6,7 +10,8 @@
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Roboto",Arial,sans-serif;
+  background-color: #f0efef;
 }
 
 /*Header*/
@@ -172,7 +177,7 @@ section {
   .post-banner h1 {
     font-size: 50px;
     color: black;
-    font-family:'Permanent Marker', cursive;
+    font-family: "Roboto",Arial,sans-serif;
     text-shadow: 2px 2px black;
   }
 
@@ -223,13 +228,13 @@ section {
     left: 0;
     transition: all .3s;
   }
-
+/*
   .section-one:hover:before {
     background: rgba(0,0,0,.4);
     z-index: 2;
     transition: all .3s;
   }
-
+*/
   .texto {
     position: absolute;
     width: 100%;
@@ -248,6 +253,7 @@ section {
     margin: 10px;
     padding: 5px;
     font-size: 30px;
+    color:black;
   }
 
   .texto-titulo {
@@ -255,12 +261,12 @@ section {
     left: 100%;
     transition: all .3s;
   }
-
+/*
 .section-one:hover .texto-titulo {
   left: 0;
   animation-delay: .3s;
   transition: all .3s;
-}
+} */
 
 .texto-parrafo {
   position: relative;
@@ -292,7 +298,7 @@ aside div {
 
 main {
   width: 100%;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Roboto",Arial,sans-serif;
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -300,11 +306,15 @@ main {
 
 
 main .formulario {
-  width: 100%;
+  width: 50%;
+  background-color: #666666;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  border: 8px solid darkgray;
 }
 
 h1 {
-  color: black;
+  color: #fff;
   text-align: center;
   margin-top: 40px;
 }
@@ -317,7 +327,7 @@ h1 {
 }
 
 .form--titulo{
-  color: black;
+  color: #fff;
   padding: 20px;
   text-align: center;
   font-weight: 100;
@@ -339,24 +349,28 @@ input {
   padding: 15px;
   font-size: 16px;
   border-radius: 3px;
-  border: 1px solid black;
+  border: 1px solid #fff;
 }
 .input-48 {
   width: 48%;
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #fff;
   background: transparent;
   outline: none;
-  color: black;
+  color: #fff;
 }
 
 .input-100 {
   width: 100%;
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #fff;
   background: transparent;
   outline: none;
-  color: black;
+  color: #fff;
+}
+
+input::placeholder {
+  color: white;
 }
 
 textarea {
@@ -374,6 +388,7 @@ textarea {
   color: #fff;
   font-size: 20px;
   border-radius: 20px;
+  padding: 5px;
 }
 .btn-enviar:active{
   transform: scale(1.10);
@@ -384,7 +399,7 @@ textarea {
   margin: 7px;
   text-align: center;
   font-size: 14px;
-  color: blacks;
+  color: #fff;
 }
 
 
@@ -429,25 +444,25 @@ footer {
   border: 1px solid black;
   font-size: 14px;
   padding: 10px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Roboto",Arial,sans-serif;
 }
 
 .footer-main .footer-columna input[type="submit"] {
   border: none;
-  background: tomato;
+  background: #b80f22;
   color: #fff;
   padding: 10px 40px;
   font-size: 18px;
   margin-top: 10px;
   cursor: pointer;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Roboto",Arial,sans-serif;
 }
 
 .footer-main .footer-columna span p {
   display: inline-block;
   margin-left: 5px;
   margin-bottom: 15px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Roboto",Arial,sans-serif;
 }
 
 .footer-copy-redes {
@@ -558,8 +573,33 @@ footer {
   }
   /*Home*/
 
-  main .contactos {
-    display: none;
+  section {
+    width: 100%;
+  }
+
+
+  .banner2 h1, h4 {
+    font-size: 60px;
+    margin-right: 40px;
+  }
+
+  .banner2 a {
+    margin-right: 350px;
+  }
+
+  .post-banner h1 {
+    font-size: 30px;
+    margin-right: 110px;
+  }
+
+
+
+  .contenedor-imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 70px;
   }
   /*Footer*/
 
@@ -573,6 +613,11 @@ footer {
 
   .footer-main .footer-columna p {
     font-size: 14px;
+  }
+
+  main .formulario {
+    margin-top: 20px;
+    width: 80%;
   }
 
 }
@@ -606,4 +651,44 @@ footer {
     width: 80%;
     margin: auto;
   }
+
+  main .formulario {
+    margin-top: 20px;
+  }
+
+  section {
+    width: 100%;
+  }
+
+
+  .banner2 h1, h4 {
+    font-size: 60px;
+    margin-right: 40px;
+  }
+
+  .banner2 a {
+    margin-right: 350px;
+  }
+
+  .post-banner h1 {
+    font-size: 30px;
+    margin-right: 110px;
+  }
+
+
+
+  .contenedor-imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 70px;
+  }
 }
+
+/*faq */
+.card-header{
+	background-color: #b0aac0 !important;
+}
+.card-header a {
+color: black;}
