@@ -676,7 +676,6 @@ footer {
   }
 
 
-
   .contenedor-imagenes {
     display: flex;
     flex-wrap: wrap;
@@ -686,6 +685,10 @@ footer {
   }
 }
 
+/*faq */
+.card-header{
+	background-color: #b0aac0 !important;
+}
 /*faq */
 .card-header{
 	background-color: #b0aac0 !important;
